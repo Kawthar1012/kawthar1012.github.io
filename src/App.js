@@ -20,8 +20,8 @@ function App() {
         handleSetLanguage={language => {
           setLanguage(language);
           storeLanguageInLocalStorage(language);
-          //window.location.reload(false);
-        }}/>
+          window.location.reload(false);
+        }} path={window.location.pathname}/>
       <Routes>
         <Route path='/' element={<Home language={language}/>}>
         </Route>
