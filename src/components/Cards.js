@@ -26,10 +26,10 @@ function Cards(props) {
             <div className='cards__wrapper'>
                 <ul className='cards__items'>
                 <CardItem 
-                    src='/images/todo.png'
+                    src='/images/choices.png'
                     text="To do list"
-                    label="MERN stack"
-                    path='/projects/to_do_list'
+                    label="Angular, Web Development"
+                    path='/projects/choices'
                     />
                     <CardItem 
                     src='/images/bounce.png'

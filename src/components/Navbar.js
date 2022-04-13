@@ -38,7 +38,6 @@ function Navbar(props) {
         }
     };
 
-
     useEffect(() => {
         showButton();
     }, []);
@@ -67,6 +66,28 @@ function Navbar(props) {
                         <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
                         {content.title3}
                         </Link>
+                        <ul className='dropdown'>
+                            <li className='nav-item'>
+                            <Link to='/projects/choices' className='nav-links' onClick={closeMobileMenu}>
+                                Choices
+                            </Link>
+                            </li>
+                            <li className='nav-item'>
+                            <Link to='/projects/tri_rac' className='nav-links' onClick={closeMobileMenu}>
+                                Tri-rac
+                            </Link>
+                            </li>
+                            <li className='nav-item'>
+                            <Link to='/projects/bounce_reloaded' className='nav-links' onClick={closeMobileMenu}>
+                                Bounce Reloaded
+                            </Link>
+                            </li>
+                            <li className='nav-item'>
+                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                                ...
+                            </Link>
+                            </li>
+                        </ul>
                     </li>
                     <li className='nav-item'>
                     <Link to={props.path} className='nav-links'

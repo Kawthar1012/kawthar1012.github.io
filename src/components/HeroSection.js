@@ -9,14 +9,14 @@ function HeroSection(props) {
   let content = {
     English: {
       title: "Welcome",
-      title2: "My name is Kawthar, I am a Master Student in Computer Science at Uppsala University, Sweden.\n"+
+      title2: "My name is Kawthar, I am a full-stack developer who recently graduated from a Master's in Computer Science.\n"+
       "Here you will find information about my ongoing and past projects.",
       info: "FIND MORE INFORMATION"
     },
     French: {
       title: "Bienvenue",
-      title2: "Je m'appelle Kawthar, je suis étudiante en Master d'Informatique à l'Université d'Uppsala en Suède.\n"+
-      "Ici, vous trouverez plus d'informations sur mes projets passés et en cours.",
+      title2: "Je m'appelle Kawthar, je suis une dévelopeuse full-stack ayant obtenu son diplôme de Master en Informatique il y'a un an.\n"+
+      "Ici, vous trouverez plus d'informations sur mes projets personnels.",
       info: "EN SAVOIR PLUS"
     }
   };

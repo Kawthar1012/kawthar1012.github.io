@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 p {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   height: 30%;
   margin-left: 15%;
@@ -12,8 +14,10 @@ p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: 'Poiret One', sans-serif;
 }
+
 
 .home,
 .journey,
@@ -52,11 +56,11 @@ p {
   font-size: 100px;
 }
 
-.text1, .text2, .text3 {
+.text1, .text2, .text3, .text4 {
   width: 100%;
   display: grid;
   padding: 1rem;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 50% 1fr;
   gap: 1rem;
   align-items: left;
   max-width: 1400px;
@@ -66,55 +70,55 @@ p {
 
 .text1 > p {
   text-align: left;
-  font-size: 35px;
+  font-size: 40px;
+  margin-top: 10px;
 }
 
 .text3 > p {
   text-align: left;
   font-size: 35px;
+  margin-top: 10px;
 }
 
 .text2 > p{
   text-align: right;
+  margin-right: 90px;
   font-size: 35px;
 }
 
+.text4 > p{
+  text-align: right;
+  margin-right: 40px;
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1400px) {
-  .text1, .text2, .text3 {
+  .text1, .text2, .text3, .text4 {
     max-width: 1200px;
   }
   
-  .text1 > p {
+  .text1 > p,.text2 > p,.text3 > p,.text4 > p {
     font-size: 25px;
   }
 
-  .text2 > p {
+  /* .text2 > p {
     font-size: 25px;
   }
 
   .text3 > p {
     font-size: 25px;
-  }
+  } */
 
 
 }
 
 @media screen and (max-width: 800px) {
-  .text1, .text2, .text3 {
+  .text1, .text2, .text3, .text4 {
     max-width: 700px;
     font: 10;
   }
 
-  .text1 > p {
-    font-size: 17px;
-  }
-
-  .text2 > p {
-    font-size: 17px;
-  }
-
-
-  .text3 > p {
+  .text1 > p,.text2 > p,.text3 > p,.text4 > p {
     font-size: 17px;
   }
 

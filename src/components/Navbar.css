@@ -73,6 +73,24 @@
   .menu-icon {
     display: none;
   }
+
+  .nav-item .dropdown {
+    display: none;
+  }
+
+.nav-item:hover .dropdown {
+    background-color: #1a1717;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .2);
+    color: #fff;
+    font-size: 30px;
+    list-style: none;
+    display: block;
+    min-width: 90px;
+    padding: 5px 10px;
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+}
   
   @media screen and (max-width: 960px) {
     .NavbarItems {
@@ -154,6 +172,10 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+
+    .nav-item:hover .dropdown {
+      display: none;
     }
 
   }

@@ -14,7 +14,13 @@ export default function Journey (props) {
           "to solidy my English.\n\n ",
           text3: "As I didn't want to stop just yet, I decided to apply for a Master's degree at Uppsala University, Sweden."+
           "In the meantime, I discovered my love for more intense experiences, I went on a few multiple days hikes and went "+
-          "bungee jumping. All of this prepared me to adapt to my new life in Sweden where I am completing my studies."
+          "bungee jumping. All of this prepared me to adapt to my new life in Sweden where I completed a Master's Degree in Computer Science.\n\n",
+          text4: "After graduating, I decided to stay in Sweden and move to Stockholm to start working as a developer at Apotea, an online pharmacy. "+
+          "During my studies, I had the chance to participate in a few extracurricular activities, one of them being an active member at a student association. "+
+          "I also took part in the Female Digital Engineer program, which allowed me to discover the tech scene in Stcokholm and meet inspiring students. "+
+          "My love for hiking has grown, and I discovered a passion for running which led me to participate in the Stockholm Half Marathon in 2024. " +
+          "After a year of experience as a developer, I can confidently say I love problem solving and building new systems as much, if not more as my " +
+          "primary passion: traveling.\n\n"
         },
         French: {
           title: "MON PARCOURS",
@@ -27,7 +33,13 @@ export default function Journey (props) {
           text3: "Je n'ai pas souhaité m'arrêter tout de suite puisque j'ai ensuite postulé pour un Master en Informatique à "+
           "l'université d'Uppsala en Suède. J'ai, en même temps, découvert mon attrait pour les expériences fortes, je suis parti "+
           "faire des randonnées sur plusieurs jours ainsi que du saut à l'élastique. Tout cela m'a préparé à m'adapter rapidement "+
-          "à ma nouvelle vie en Suède où je termine mes études."
+          "à ma nouvelle vie en Suède où j'ai terminé mes études l'an dernier.",
+          text4: "Après avoir obtenu mon diplôme, j'ai déménagé à Stockholm pour travailler en tant que dévélopeuse à Apotea, une pharmacie "+
+          "en ligne. Durant mes études, j'ai eut la chance d'être active dans une association universitaire. J'ai également participé "+
+          "au programme Female Digital Engineer qui m'a permis d'en apprendre plus sur la scène Tech à Stockholm et de rencontrer des "+
+          "étudiantes et professionels du métier. J'ai dévelopé une passion pour la course qui m'a amené à participer à un semi-marathon en 2024. "+
+          "Après un an d'expérience en tant que dévelopeuse, ma passion pour la programmation n'a fait que grandir, aditionellement à ma passion "+
+          "initiale pour le voyage. \n\n"
         }
       };
       
@@ -48,6 +60,10 @@ export default function Journey (props) {
    <div className="text3">
    <p>{content.text3}</p>
    <img src={require("../../images/sweden.jpeg")} alt="Sweden" width="90%"/>
+   </div>
+   <div className="text4">
+   <img src={require("../../images/graduation.jpeg")} alt="Graduation" width="60%"/>
+   <p>{content.text4}</p>
    </div>
    </div>
     );

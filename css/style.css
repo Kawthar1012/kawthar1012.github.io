@@ -1,6 +1,8 @@
+@import url('ttps://fonts.googleapis.com/css?family=Jost');
+
 body {
     background-color: lavender; 
-    font-family: 'Gill Sans', sans-serif; 
+    font-family: 'Jost', sans-serif; 
     font-size: 100%;
     text-align: center;
 }

@@ -39,7 +39,7 @@ function App() {
         </Route>
         <Route path='/projects/tri_rac' element={<Trirac language={language}/>}>
         </Route>
-        <Route path='/projects/to_do_list' element={<Todo language={language}/>}>
+        <Route path='/projects/choices' element={<Todo language={language}/>}>
         </Route>
         <Route path='/projects/the_flying_dutchman' element={<Dutchman language={language}/>}>
         </Route>
