@@ -1,3 +1,13 @@
+p {
+  font-size: 25px;
+  text-align: center;
+  height: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,9 +16,8 @@
 }
 
 .home,
-.menu,
-.values,
-.order {
+.journey,
+.projects{
   display: flex;
   height: 90vh;
   align-items: center;
@@ -16,8 +25,8 @@
   font-size: 3rem;
 }
 
-.menu {
-  background-image: url('images/breakfast.jpg');
+.journey {
+  background-image: url('images/journey.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,10 +34,10 @@
   font-size: 100px;
 }
 
-.values {
-  background-image: url('images/bakery.jpg');
+.projects {
+  background-image: url('images/projets.jpeg'), linear-gradient(#52578D, #FFCFD0);
   background-position: center;
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
@@ -41,4 +50,76 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+.text1, .text2, .text3 {
+  width: 100%;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 60% 1fr;
+  gap: 1rem;
+  align-items: left;
+  max-width: 1400px;
+  margin: 0 auto;
+  
+}
+
+.text1 > p {
+  text-align: left;
+  font-size: 35px;
+}
+
+.text3 > p {
+  text-align: left;
+  font-size: 35px;
+}
+
+.text2 > p{
+  text-align: right;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 1400px) {
+  .text1, .text2, .text3 {
+    max-width: 1200px;
+  }
+  
+  .text1 > p {
+    font-size: 25px;
+  }
+
+  .text2 > p {
+    font-size: 25px;
+  }
+
+  .text3 > p {
+    font-size: 25px;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .text1, .text2, .text3 {
+    max-width: 700px;
+    font: 10;
+  }
+
+  .text1 > p {
+    font-size: 17px;
+  }
+
+  .text2 > p {
+    font-size: 17px;
+  }
+
+
+  .text3 > p {
+    font-size: 17px;
+  }
+
+  .journey,.projects{
+    font-size: 70px;
+  }
+
 }

@@ -7,18 +7,11 @@ function Cards(props) {
 
     let content = {
         English: {
-          title: "Here you can find our articles",
-          title1: "Check out our lattest pancake recipe!",
-          title2: "Check out the menu!",
-          title3: "Want to know more about our values?",
-          keyword: "Recipe"
+          title: "Here you can find my ongoing and finished projects",
+          
         },
         French: {
-          title: "Nos articles",
-          title1: "Retrouvez notre toute dernière recette de pancakes !",
-          title2: "Retrouvez notre menu! ",
-          title3: "En savoir plus sur nos valeurs",
-          keyword: "Recette"
+          title: "Ici vous trouverez mes projets en cours et passés",
         }
       };
       
@@ -32,11 +25,44 @@ function Cards(props) {
         <div className='cards__container'>
             <div className='cards__wrapper'>
                 <ul className='cards__items'>
+                <CardItem 
+                    src='/images/todo.png'
+                    text="To do list"
+                    label="MERN stack"
+                    path='/projects/to_do_list'
+                    />
                     <CardItem 
-                    src='/images/pancakes-small.jpg'
-                    text={content.title1}
-                    label={content.keyword}
-                    path='/'
+                    src='/images/bounce.png'
+                    text="Bounce Reloaded"
+                    label="Flutter, App Development"
+                    path='/projects/bounce_reloaded'
+                    />
+                    <CardItem 
+                    src='/images/trirac.png'
+                    text="Tri-rac"
+                    label="React Native, Flask, App Development"
+                    path='/projects/tri_rac'
+                    />
+                    
+                </ul>
+                <ul className='cards__items'>
+                <CardItem 
+                    src='/images/dutchman.jpg'
+                    text="The Flying Dutchman"
+                    label="Web developpment"
+                    path='/projects/the_flying_dutchman'
+                    />
+                  <CardItem 
+                    src='/images/ants.jpg'
+                    text="Ants"
+                    label="Java"
+                    path='/projects/ants'
+                    />
+                    <CardItem 
+                    src='/images/games.png'
+                    text="Multi-games"
+                    label="Java"
+                    path='/projects/multi_games'
                     />
                 </ul>
             </div>

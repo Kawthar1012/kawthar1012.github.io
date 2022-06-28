@@ -8,16 +8,14 @@ function Navbar(props) {
     let content = {
         English: {
           title: "Home",
-          title2: "Menu",
-          title3: "Our values",
-          button: "ORDER",
+          title2: "Journey",
+          title3: "Projects",
           lang: "French"
         },
         French: {
           title: "Accueil",
-          title2: "Menu",
-          title3: "Nos valeurs",
-          button: "COMMANDER",
+          title2: "Parcours",
+          title3: "Projets",
           lang: "English"
         }
       };
@@ -51,9 +49,6 @@ function Navbar(props) {
     <>
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    VATT <i className="fa-solid fa-cookie"></i>
-                </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>
@@ -64,28 +59,22 @@ function Navbar(props) {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/menu' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/journey' className='nav-links' onClick={closeMobileMenu}>
                         {content.title2}
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/values' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
                         {content.title3}
                         </Link>
                     </li>
                     <li className='nav-item'>
-                    <Link to='/' className='nav-links'
+                    <Link to={props.path} className='nav-links'
                         onClick={e => props.handleSetLanguage(e.target.innerHTML==='English'?'English':'French')}>
                             {content.lang}
                     </Link>
                     </li>
-                    <li>
-                    <Link to='/order' className='nav-links-mobile' onClick={closeMobileMenu}>
-                        {content.button}
-                    </Link>
-                    </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline' path='/order'>{content.button}</Button>}
             </div>
         </nav>
     </>
