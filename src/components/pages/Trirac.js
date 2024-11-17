@@ -14,8 +14,8 @@ function Trirac(props) {
     },
     French: {
       title: "Tri-rác",
-      text1: "",
-      text2: "",
+      text1: "Tri-rác est un prototype de système de tri des déchets qui fonctionne à la fois de manière automatisée et sous la supervision d'un humain. Il permet de trier et de classer les déchets après avoir été ramassés et déposés sur un convoyeur. En introduisant une application dans le système, nous pouvons rendre le tri des déchets plus accessible à tous. De cette manière, nous donnons à l'utilisateur le contrôle sur la manière dont il peut trier ses déchets avec la facilité qu'un système externe peut offrir.",
+      text2: "Tri-rác est un projet de groupe réalisé en collaboration avec l'Université de Hanoi (Vietnam). Le but du projet était de construire un prototype incluant les robots Lego EV3. À droite, vous trouverez une vidéo montrant comment l'application peut être utilisée pour contrôler les différents articles passés au convoyeur ainsi que leur numérisation afin que le robot fasse lui-même le classement.",
       title2: "Technologies utilisées",
       tech: "React Native (app), Flask (back end), librairies Python (OpenCV and ev3dev), socket programming et threads."
     }

@@ -44,7 +44,7 @@ function Todo(props) {
           </div>
           <div className='project_demo'>
           <img src={require("../../images/choices.png")} alt="demo_choices" width="100%" style={vidStyle}></img>
-          <p><a href='https://github.com/Kawthar1012'><i className="fa fa-github"></i> To do list</a></p>
+          <p><a href='https://github.com/Kawthar1012/Choices'><i className="fa fa-github"></i>Choices</a></p>
           </div>
       </div>
     </>
