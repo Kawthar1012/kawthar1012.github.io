@@ -24,16 +24,22 @@
     margin: 10px 0 20px;
   }
   
+
   .cards__items {
-     width: 150%;
+    width: 150%;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
     margin-bottom: 24px;
+    list-style: none; 
+    padding: 0;
   }
   
   .cards__item {
-    display: flex;
-    flex: 1;
-    margin: 0 1rem;
-    border-radius: 10px;
+    flex: 1 1 calc(33.33% - 2rem); 
+    margin: 1rem; 
+    box-sizing: border-box; 
+    max-width: calc(33.33% - 2rem); 
   }
   
   .cards__item__link {
@@ -117,6 +123,8 @@
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
+        flex: 1 1 calc(100% - 2rem); /* One item per row */
+        max-width: calc(100% - 2rem);
       margin-bottom: 2rem;
     }
   }

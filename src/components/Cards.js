@@ -27,25 +27,30 @@ function Cards(props) {
                 <ul className='cards__items'>
                 <CardItem 
                     src='/images/choices.png'
-                    text="To do list"
+                    text="Choices"
                     label="Angular, Web Development"
                     path='/projects/choices'
                     />
                     <CardItem 
-                    src='/images/bounce.png'
-                    text="Bounce Reloaded"
-                    label="Flutter, App Development"
-                    path='/projects/bounce_reloaded'
-                    />
+                    src='/images/dark_choices.png'
+                    text="Dark Choices"
+                    label=".NET, Web Development"
+                    path='/projects/dark_choices'
+                    />                   
                     <CardItem 
                     src='/images/trirac.png'
                     text="Tri-rac"
                     label="React Native, Flask, App Development"
                     path='/projects/tri_rac'
-                    />
-                    
+                    />                   
                 </ul>
                 <ul className='cards__items'>
+                <CardItem 
+                    src='/images/bounce.png'
+                    text="Bounce Reloaded"
+                    label="Flutter, App Development"
+                    path='/projects/bounce_reloaded'
+                    />
                 <CardItem 
                     src='/images/dutchman.jpg'
                     text="The Flying Dutchman"
@@ -57,13 +62,16 @@ function Cards(props) {
                     text="Ants"
                     label="Java"
                     path='/projects/ants'
-                    />
-                    <CardItem 
+                    />                   
+                </ul>
+                <ul className='cards__items'>
+                <CardItem 
                     src='/images/games.png'
                     text="Multi-games"
                     label="Java"
                     path='/projects/multi_games'
                     />
+                    
                 </ul>
             </div>
         </div>

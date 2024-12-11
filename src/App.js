@@ -9,10 +9,11 @@ import Journey from "./components/pages/Journey";
 import Projects from "./components/pages/Projects";
 import Bounce from "./components/pages/Bounce";
 import Trirac from "./components/pages/Trirac";
-import Todo from "./components/pages/Todo";
 import Dutchman from "./components/pages/Dutchman";
 import Ants from "./components/pages/Ants";
 import Games from "./components/pages/Games";
+import Choices from "./components/pages/Choices";
+import DarkChoices from "./components/pages/DarkChoices";
 
 function App() {
   let languageStoredInLocalStorage = localStorage.getItem("language");
@@ -39,13 +40,15 @@ function App() {
         </Route>
         <Route path='/projects/tri_rac' element={<Trirac language={language}/>}>
         </Route>
-        <Route path='/projects/choices' element={<Todo language={language}/>}>
+        <Route path='/projects/choices' element={<Choices language={language}/>}>
         </Route>
         <Route path='/projects/the_flying_dutchman' element={<Dutchman language={language}/>}>
         </Route>
         <Route path='/projects/ants' element={<Ants language={language}/>}>
         </Route>
         <Route path='/projects/multi_games' element={<Games language={language}/>}>
+        </Route>
+        <Route path='/projects/dark_choices' element={<DarkChoices language={language}/>}>
         </Route>
       </Routes>
       <Footer language={language}/>

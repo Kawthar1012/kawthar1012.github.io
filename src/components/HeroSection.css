@@ -19,18 +19,18 @@
   }
 
   .hero-container > p {
-      margin-top: 70px;
+      margin-top: 50px;
       color: #fff;
       font-size: 25px;
       max-width: 50%;
   }
 
-  .hero-btns {
+  /* .hero-btns {
       margin-top: -30px;
-  }
+  } */
 
   .hero-btns .btn {
-      margin: 0px;
+      margin: 30px;
   }
 
   @media screen and (max-width: 960px) {
@@ -38,6 +38,10 @@
         color: #fff;
         font-size: 50px;
         margin-top: 30px;
+    }
+
+    .hero-btns .btn {
+        margin: 20px;
     }
   }
 

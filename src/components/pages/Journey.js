@@ -47,8 +47,8 @@ export default function Journey (props) {
         ? (content = content.French)
         : (content = content.English);
 
-    return ( <div className="aboutJourney">
-    <h1 className="journey">{content.title}</h1>
+    return ( <div><h1 className="journey">{content.title}</h1> 
+    <div className="aboutJourney">   
     <div className="text1">
    <p>{content.text1}</p>
    <img src={require("../../images/Uni.jpg")} alt="Bachelor" width="80%"/>
@@ -66,5 +66,6 @@ export default function Journey (props) {
    <p>{content.text4}</p>
    </div>
    </div>
+   </div> 
     );
 }
